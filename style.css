@@ -36,11 +36,13 @@ main {
 
 .card {
     /* width: 375px; */
-    height: auto;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    background-color: var(--very-pale-blue);
+    background-color: #fff;
+    background-color: hsl(225, 38%, 94%);
+    box-shadow: 0 .1rem 1rem var(--dark-blue);
 }
 
 .hero-image {
@@ -66,6 +68,7 @@ main {
     text-align: center;
     color: var(--desaturated-blue);
     line-height: 1.8;
+    padding: 0 2rem;
     margin: 1rem 0 1rem;
 
 }
@@ -73,7 +76,7 @@ main {
 .order-plan {
     width: 90%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     /* Row and nowrap by default */
 
@@ -124,7 +127,7 @@ main {
 .pay-cancel-title {
     background-color: var(--bright-blue);
     color: var(--very-pale-blue);
-    /* box-shadow: 0 .8rem 5rem var(--desaturated-blue); */
+    box-shadow: .2rem .3rem 1rem var(--dark-blue);
 }
 
 .pay-cancel-subtitle {
