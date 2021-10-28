@@ -41,7 +41,7 @@ main {
     border-radius: 10px;
     background-color: #fff;
     background-color: hsl(225, 38%, 94%);
-    box-shadow: 0 .1rem 1rem var(--dark-blue);
+    /* box-shadow: 0 .1rem 1rem var(--dark-blue); */
 }
 
 .hero-image {
@@ -148,7 +148,7 @@ main {
     }
 
     .card{
-        width: 30%;
+        width: 25%;
     }
 
     a:hover{
