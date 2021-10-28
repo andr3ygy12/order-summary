@@ -1,0 +1,167 @@
+html {
+    box-sizing: border-box;
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    /* Neutral */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+
+    /* i copied this color xd */
+    --customize-color: hsl(225, 43%, 95%);
+
+    font-size: 16px;
+    font-family: "Red Hat Display";
+}
+
+*::after,
+*::before,
+* {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background-image: url('./images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.card {
+    /* width: 375px; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: var(--very-pale-blue);
+}
+
+.hero-image {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 220px;
+}
+
+.order-summary {
+    display: flex;
+    flex-direction: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-summary-title {
+    font-weight: 800;
+    margin-bottom: .5rem;
+    color: var(--dark-blue);
+}
+
+.order-summary-text {
+    text-align: center;
+    color: var(--desaturated-blue);
+    line-height: 1.8;
+    margin: 1rem 0 1rem;
+
+}
+
+.order-plan {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Row and nowrap by default */
+
+    padding: .5rem;
+    background-color: var(--customize-color);
+    color: var(--desaturated-blue);
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+
+}
+
+.data-price {
+    text-align: center;
+}
+
+.data-price-title {
+    margin-bottom: .2rem;
+    color: var(--dark-blue);
+}
+
+
+.change-plan-link {
+    color: var(--bright-blue);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.pay-cancel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.pay-cancel-title,
+.pay-cancel-subtitle {
+    display: block;
+    width: 90%;
+    padding: 1rem;
+    border-radius: .6rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: .5rem;
+
+}
+
+.pay-cancel-title {
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    /* box-shadow: 0 .8rem 5rem var(--desaturated-blue); */
+}
+
+.pay-cancel-subtitle {
+    color: var(--desaturated-blue);
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1020px) {
+    body{
+        background-image: url('./images/pattern-background-desktop.svg');
+        background-size: 100% 60%;
+    }
+
+    main{
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card{
+        width: 30%;
+    }
+
+    a:hover{
+        cursor: pointer;
+    }
+    .pay-cancel-title:hover{
+        opacity: .80;
+    }
+    
+    .pay-cancel-subtitle:hover{
+        color: #000;
+    }
+
+    .change-plan-link:hover{
+        text-decoration: none;
+    }
+
+}
